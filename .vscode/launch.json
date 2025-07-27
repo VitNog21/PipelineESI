@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "1. Executar Pipeline de Dados",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Pipeline_dados.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "purpose": "execute"
+        },
+        {
+            "name": "2. Executar Pipeline de Modelagem",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Pipeline_modelos.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "purpose": "execute"
+        },
+        {
+            "name": "3. Iniciar API e Interface",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "servico_api:app",
+                "--reload"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "purpose": "execute"
+        }
+    ]
+}

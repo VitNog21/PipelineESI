@@ -3,7 +3,6 @@ dados/
 output/
 __pycache__/
 *.pyc
-.vscode/
 kaggle.json
 .DS_Store
 Thumbs.db
